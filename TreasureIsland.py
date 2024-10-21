@@ -8,7 +8,12 @@ if left_right == "left":
 
     swim_wait = input("The river is rapidly flowing. Do you want to run across the rocks or continue walking? ")
     if swim_wait == "run" or swim_wait == "run across":
-        print("")
+        print("You've made it safely, somehow, to the other side. You can see cabins up ahead")
+
+        # choose door to 3 different cabins
+
+    elif swim_wait == "continue" or swim_wait == "continue walking":
+        print("You've been eaten by a wild bear... Game Over")
 elif left_right == "right":
     print("You've fell into a sinkhole... Game Over")
 

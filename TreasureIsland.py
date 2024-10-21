@@ -17,19 +17,26 @@ while True:
                 while True:
 
                     cabin_door = input("Which cabin do you think is the safest? Red, Yellow, or Blue").lower()
-                    if
+                    if cabin_door == "yellow":
+                        print("You've found the Hidden Treasure!")
+                        print("You've won!")
+                        break
+                    elif cabin_door == "red":
+                        print("A witch turned around and made you melt")
+                    elif cabin_door == "blue":
+                        print("You fell into a vine trap")
+                    break
             elif swim_wait == "continue" or swim_wait == "continue walking":
                 print("You've been eaten by a wild bear... Game Over")
-                continue # Restarts new game
             else:
                 print("Not a choice, choose something else")
-        continue
-
-
+            break
     # left or right question
     elif left_right == "right":
         print("You've fell into a sinkhole... Game Over")
-        continue # Restarts new game
     else:
         print("You can't go that way. Please choose 'left' or 'right'.")
-    continue
+        continue
+
+    if cabin_door == "yellow":
+        break

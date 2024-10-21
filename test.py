@@ -17,7 +17,7 @@ while True:
                     cabin_door = input("Which cabin do you think is the safest? Red, Yellow, or Blue? ").lower()
                     if cabin_door == "red":
                         print("You found a treasure in the red cabin! You win!")
-                        exit() # ends the game once the correct answer is given
+                        exit()
                     elif cabin_door == "yellow":
                         print("You've been trapped in a yellow cabin... Game Over")
                         break  # Exit the cabin loop
@@ -40,5 +40,4 @@ while True:
     else:
         print("You can't go that way. Please choose 'left' or 'right'.")
         continue
-
 print("Thank you for playing!")

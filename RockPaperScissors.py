@@ -6,14 +6,13 @@ print("Let's play Rock Paper Scissors together!")
 # scissors beats paper
 # paper beats rock
 
-rps = ["Rock", "Paper", "Scissors"]
+rps = ["rock", "paper", "scissors"]
 
-player_1 = input("Do you choose Rock, Paper, or Scissors? ").lower()
-ai = random.choice(rps)
-
-print(f"Opponent chose {ai}")
 
 while True:
+    player_1 = input("Do you choose Rock, Paper, or Scissors? ").lower()
+    ai = random.choice(rps)
+    print(f"Opponent chose {ai}")
 
     if player_1 == ai:
         print("Tie, try again.")
@@ -24,7 +23,6 @@ while True:
     else:
         print("You Lose")
         exit()
-
 
 
 

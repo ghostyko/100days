@@ -1,1 +1,0 @@
-favorite_number = 22

@@ -16,3 +16,5 @@ states_of_america.extend(["Land", "island"])
 states_of_america[0] = "Delawear"
 print(states_of_america[0])
 print(states_of_america[-1])
+
+print(states_of_america)

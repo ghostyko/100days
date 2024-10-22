@@ -11,5 +11,6 @@ states_of_america = ["Delaware", "Pennsylvania", "New Jersey",
                      "Montana", "Washington", "Idaho", "Wyoming", "Utah",
                      "Oklahoma", "New Mexico", "Arizona", "Alaska", "Hawaii"]
 
+states_of_america[0] = "Delawear"
 print(states_of_america[0])
 print(states_of_america[-1])

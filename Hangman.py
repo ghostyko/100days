@@ -13,6 +13,9 @@ choice = input("Guess a letter: ").lower()
 
 for letter in rando:
     if  letter == choice:
-        print(letter)
+        placeholder += choice
     else:
-        print("wrong")
+        print(placeholder)
+
+print(placeholder)
+

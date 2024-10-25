@@ -8,10 +8,14 @@ placeholder = ""
 for char in rando:
     placeholder += "_"
 print(placeholder)
-while True:
+
+
+game_over = False
+while not game_over:
     choice = input("Guess a letter: ").lower()
 
     display = ""
+
     for letter in rando:
         if letter == choice:
             display += letter
@@ -20,3 +24,6 @@ while True:
 
     print(display)
 
+    if "_" not in display:
+        game_over = True
+        print("You Win!")

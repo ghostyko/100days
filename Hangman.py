@@ -4,15 +4,15 @@ word_list = ["aardvark", "baboon", "camel"]
 rando = random.choice(word_list)
 print(rando)
 
-placeholder = "_"
+placeholder = ""
 for char in rando:
-    placeholder += char
-    print(placeholder)
+    placeholder += "_"
+print(placeholder)
 
 choice = input("Guess a letter: ").lower()
 
 for letter in rando:
     if  letter == choice:
-        print("right")
+        print(letter)
     else:
         print("wrong")

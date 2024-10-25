@@ -6,7 +6,9 @@ print(rando)
 
 placeholder = "_"
 for char in rando:
-    if
+    placeholder += char
+    print(placeholder)
+
 choice = input("Guess a letter: ").lower()
 
 for letter in rando:

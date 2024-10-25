@@ -2,20 +2,22 @@ import random
 word_list = ["aardvark", "baboon", "camel"]
 
 rando = random.choice(word_list)
-print(rando)
+
 
 placeholder = ""
 for char in rando:
     placeholder += "_"
 print(placeholder)
+while True:
+    choice = input("Guess a letter: ").lower()
 
-choice = input("Guess a letter: ").lower()
+    display = ""
 
-for letter in rando:
-    if  letter == choice:
-        placeholder += choice
-    else:
-        print(placeholder)
+    for letter in rando:
+        if letter == choice:
+            display += letter
+        else:
+            display += "_"
 
-print(placeholder)
+    print(display)
 

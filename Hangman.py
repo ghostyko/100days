@@ -12,7 +12,6 @@ while True:
     choice = input("Guess a letter: ").lower()
 
     display = ""
-
     for letter in rando:
         if letter == choice:
             display += letter

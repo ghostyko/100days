@@ -9,6 +9,7 @@ for char in rando:
     placeholder += "_"
 print(placeholder)
 
+correct_letters = []
 
 game_over = False
 while not game_over:
@@ -18,6 +19,9 @@ while not game_over:
 
     for letter in rando:
         if letter == choice:
+            display += letter
+            correct_letters.append(letter)
+        elif letter in correct_letters:
             display += letter
         else:
             display += "_"
